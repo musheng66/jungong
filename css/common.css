@@ -14,7 +14,7 @@ body, button, input, select, textarea, h1, h2, h3, h4, h5, h6 {
     word-wrap: break-word;
 }
 
-a, a:hover, a:focus, a:visited{
+a, a:hover, a:focus, a:visited {
     text-decoration: none;
     color: #fff;
     -webkit-transition: all 0.25s ease;
@@ -105,4 +105,16 @@ div#return-top a{
         margin: 0 auto;
         width: 100px;
     }
+}
+
+/* button */
+button.btn {
+    width: 100px;
+    background: #333;
+    color: #fff;
+    -webkit-transition: all 0.25s ease;
+    -moz-transition: all 0.25s ease;
+    -ms-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    transition: all 0.25s ease;
 }
