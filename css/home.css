@@ -1,0 +1,87 @@
+/**
+    首页样式
+ */
+
+main hr {
+    display: none;
+}
+
+div.main-card {
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+div.main-card .row {
+    margin: 0;
+}
+
+div.main-card .row .card-entity {
+    height: 55vw;
+    padding: 0;
+}
+
+div.main-card .row .card-entity .content {
+    height: 100%;
+    padding: 5px;
+}
+
+div.main-card .row .card-entity .content figure {
+    height: inherit;
+    background: no-repeat center;
+    background-size: cover;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -ms-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+    opacity: 0.8;
+}
+
+div.main-card .row .card-entity .content figure:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+div.main-card .row .card-entity:nth-of-type(1) figure {
+    background-image: url("../images/home/card1.png");
+}
+
+div.main-card .row .card-entity:nth-of-type(2) figure {
+    background-image: url("../images/home/card2.png");
+}
+
+div.main-card .row .card-entity:nth-of-type(3) figure {
+    background-image: url("../images/home/card3.png");
+}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+
+    main hr {
+        display: block;
+        margin: 60px 5px;
+        border-top: 1px solid #444;
+    }
+
+    div.main-card .row .card-entity {
+        height: 20vw;
+        padding: 0;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    main hr {
+        margin: 60px auto;
+        max-width: 1190px;
+    }
+
+}
+
+@media (min-width: 1400px) {
+
+
+}

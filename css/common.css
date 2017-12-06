@@ -1,0 +1,108 @@
+html,
+body {
+    overflow-x: hidden; /* Prevent scroll on narrow devices */
+    margin: 0;
+    padding: 0;
+    background: #000;
+    color: #fff;
+    font: normal 14px/1 'Microsoft YaHei', 'Lantinghei SC', 'Open Sans', 'Hiragino Sans GB', 'WenQuanYi Micro Hei', STHeiti, SimSun, Arial, sans-serif;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+}
+
+body, button, input, select, textarea, h1, h2, h3, h4, h5, h6 {
+    word-wrap: break-word;
+}
+
+a, a:hover, a:focus, a:visited{
+    text-decoration: none;
+    color: #fff;
+    -webkit-transition: all 0.25s ease;
+    -moz-transition: all 0.25s ease;
+    -ms-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+}
+
+
+@media screen and (max-width: 768px) {
+    .container .jumbotron, .container-fluid .jumbotron {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+}
+
+.homepage .bs-docs-section{
+    padding-bottom: 30px;
+}
+
+.bs-docs-section .page-header{
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 60px;
+    margin-top: 10px;
+}
+
+.bs-docs-section div.col-phone-12{
+    padding-top: 15px;
+}
+
+.jumbotron{
+    /*margin-bottom: 50px;*/
+}
+
+/* animate.css */
+.site__title {
+    color: #f35626;
+    background-image: -webkit-gradient(linear, 0 0, 0 92%, from(#f35626), to(#feab3a));
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: hue 60s infinite linear;
+}
+
+/* BootstrapDatePicker */
+input.form-control[disabled].ro-bg-white, .form-control[readonly].ro-bg-white, fieldset[disabled].ro-bg-white .form-control.ro-bg-white{ background-color:#fff; }
+
+/* MsJS */
+.checkbox+.checkbox{
+    margin-top : 10px;
+}
+
+
+/*return top*/
+div#return-top a{
+    color: #B7B7B7;
+    background: #fff;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+}
+div#return-top a:hover{
+    color: #000;
+    border: 1px solid #000;
+    /*box-shadow: 1px 1px 3px 3px #ccc;*/
+}
+div#return-top a{
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+}
+/*screen width > 768*/
+@media screen and (min-width: 768px){
+
+    div#return-top{
+        position: relative;
+    }
+}
+
+/*screen width < 768*/
+@media screen and (max-width: 767px) {
+    div#return-top{
+        position: relative;
+        margin: 0 auto;
+        width: 100px;
+    }
+}
