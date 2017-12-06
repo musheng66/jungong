@@ -1,0 +1,101 @@
+/**
+    服务页面样式
+ */
+main {
+
+}
+
+main section {
+
+}
+
+main figure.banner {
+    width: 100%;
+    height: 50vw;
+    max-height: 700px;
+    background: url("../images/service/banner.png") no-repeat center;
+    background-size: auto 100%;
+}
+
+main section.page {
+    background: no-repeat center;
+    background-size: auto 100%;
+    width: 100%;
+    height: 100vw;
+    max-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 15px;
+}
+
+main section.page hr {
+    margin: 10px auto 0;
+    width: 80px;
+}
+
+main section.page h3 {
+    font-size: 36px;
+    font-weight: normal;
+}
+
+main section.page p {
+    font-size: 28px;
+    margin: 10px;
+    line-height: 36px;
+}
+
+main section.page:nth-of-type(1) {
+    background-image: url("../images/service/section1.png");
+}
+
+main section.page:nth-of-type(2) {
+    background-image: url("../images/service/section2.png");
+}
+
+main section.page:nth-of-type(3) {
+    background-image: url("../images/service/section3.png");
+}
+
+main section.page:nth-of-type(4) {
+    background-image: url("../images/service/section4.png");
+}
+
+/*main section.page:nth-of-type(4) {*/
+    /*max-height: 800px;*/
+    /*height: auto;*/
+    /*margin-top: 30px;*/
+    /*background: #222;*/
+    /*border-top: 1px solid #444;*/
+    /*border-bottom: 1px solid #444;*/
+    /*padding: 80px 15px;*/
+/*}*/
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+
+    main section {
+
+    }
+
+}
+
+@media (min-width: 1200px) {
+
+    main section {
+
+    }
+
+    main section.page {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 1400px) {
+
+
+}
