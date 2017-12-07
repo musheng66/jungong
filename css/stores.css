@@ -1,0 +1,157 @@
+/**
+    零售店页面样式
+ */
+main {
+
+}
+
+main section {
+
+}
+
+main figure.banner {
+    width: 100%;
+    height: 50vw;
+    max-height: 500px;
+    background: url("../images/stores/banner.png") no-repeat center;
+    background-size: auto 100%;
+}
+
+main section.page.flex-content {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+    background-color: #111;
+    margin-top: 30px;
+}
+
+main section.page.flex-content hr {
+    margin: 10px 0;
+    width: 100%;
+    max-width: 400px;
+}
+
+main section.page.flex-content .title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #999;
+}
+
+main section.page.flex-content .title h3 {
+    font-size: 36px;
+    font-weight: normal;
+    display: inline-block;
+    padding: 15px 0;
+    margin: 0;
+}
+
+main section.page.flex-content .title #area {
+    display: inline-block;
+    width: 180px;
+}
+
+main section.page.flex-content .content {
+    display: flex;
+    flex-direction: column;
+}
+
+main section.page.flex-content .content .store-single {
+    font-size: 22px;
+    line-height: 24px;
+    padding-top: 30px;
+}
+
+main section.page.flex-content .content .store-single .area-title {
+    display: flex;
+    align-items: center;
+}
+
+main section.page.flex-content .content .store-single .area-title h4 {
+    font-size: 28px;
+    font-weight: normal;
+    display: inline-block;
+    border-bottom: 1px solid #999;
+    padding: 15px 0;
+}
+
+main section.page.flex-content .content .store-single .context {
+
+}
+
+main section.page.flex-content .content .store-single .context p {
+    font-size: 22px;
+    line-height: 24px;
+}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+
+    main section {
+
+    }
+
+    main section.page.flex-content {
+        padding: 30px;
+    }
+
+    main section.page.flex-content .title {
+
+    }
+
+    main section.page.flex-content .content {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: start;
+    }
+
+    main section.page.flex-content .content .store-single {
+        width: 50%;
+        height: 220px;
+    }
+
+    main section.page.flex-content .content .store-single:nth-of-type(2n) {
+        padding-left: 45px;
+    }
+
+    main section.page.flex-content .content .store-single:nth-of-type(2n + 1) {
+        padding-right: 45px;
+    }
+}
+
+@media (min-width: 1000px) {
+
+    main section {
+
+    }
+
+    main section.page.flex-content .content .store-single:nth-of-type(2n) {
+        padding-left: 80px;
+    }
+
+    main section.page.flex-content .content .store-single:nth-of-type(2n + 1) {
+        padding-right: 80px;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    main section {
+
+    }
+
+    main section.page {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 1400px) {
+
+
+}

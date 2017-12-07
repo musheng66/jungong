@@ -26,6 +26,7 @@ header nav.navbar-inverse .navbar-nav>li {
 
 header nav.navbar-inverse .navbar-nav>li>a {
     color: #eee;
+    font-size: 16px;
 }
 
 header nav.navbar-inverse .navbar-nav>li>a:hover {

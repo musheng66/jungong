@@ -5,9 +5,10 @@ body {
     padding: 0;
     background: #000;
     color: #fff;
-    font: normal 14px/1 'Microsoft YaHei', 'Lantinghei SC', 'Open Sans', 'Hiragino Sans GB', 'WenQuanYi Micro Hei', STHeiti, SimSun, Arial, sans-serif;
+    font: normal 14px/1 'SourceHanSansCN Regular', "Helvetica Neue", Helvetica, Arial, sans-serif, 'Microsoft YaHei', 'Lantinghei SC', 'Open Sans', 'Hiragino Sans GB', 'WenQuanYi Micro Hei', STHeiti, SimSun;
     -ms-text-overflow: ellipsis;
     text-overflow: ellipsis;
+    letter-spacing: 1px;
 }
 
 body, button, input, select, textarea, h1, h2, h3, h4, h5, h6 {
@@ -24,6 +25,9 @@ a, a:hover, a:focus, a:visited {
     transition: all 0.25s ease;
 }
 
+hr {
+    border-color: #999;
+}
 
 @media screen and (max-width: 768px) {
     .container .jumbotron, .container-fluid .jumbotron {
@@ -117,4 +121,13 @@ button.btn {
     -ms-transition: all 0.25s ease;
     -o-transition: all 0.25s ease;
     transition: all 0.25s ease;
+}
+
+.form-control {
+    color: #fff;
+    background: #333;
+}
+
+.clear {
+    clear: both;
 }

@@ -1,0 +1,188 @@
+/**
+    APP页面样式
+ */
+main {
+
+}
+
+main section {
+
+}
+
+main figure.banner {
+    width: 100%;
+    height: 100vw;
+    max-height: 700px;
+    background: url("../images/app/banner.png") no-repeat 10%;
+    background-size: auto 100%;
+}
+
+main figure.banner .page-body,
+main section.page .page-body {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+main figure.banner .page-body .content {
+    display: flex;
+    align-items: center;
+    padding: 30px 0;
+    float: right;
+}
+
+main figure.banner .page-body .content figure {
+    width: 64px;
+    height: 64px;
+    min-width: 64px;
+    background: url("../images/app/key.png") no-repeat center;
+    background-size: cover;
+}
+
+main figure.banner .page-body .content h2 {
+    font-size: 34px;
+    color: #004998;
+    margin: 0;
+    font-weight: normal;
+    padding: 15px;
+}
+
+main section.page {
+    background: no-repeat 10%;
+    background-size: auto 100%;
+    width: 100%;
+    height: 100vw;
+    max-height: 800px;
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*justify-content: center;*/
+    /*text-align: center;*/
+    /*padding: 15px;*/
+}
+
+main section.page hr {
+    margin: 10px auto 0;
+    width: 80px;
+}
+
+main section.page:nth-of-type(1) {
+    background-image: url("../images/app/section1.png");
+}
+
+main section.page:nth-of-type(2) {
+    background-image: url("../images/app/section2.png");
+}
+
+main section.page:nth-of-type(3) {
+    background-image: url("../images/app/section3.png");
+}
+
+main section.page .page-body {
+
+}
+
+main section.page .page-body .content {
+    display: flex;
+    align-items: center;
+    padding: 30px 0;
+}
+
+main section.page:nth-of-type(2) .page-body .content {
+    float: right;
+}
+
+main section.page .page-body .content figure {
+    width: 64px;
+    height: 64px;
+    min-width: 64px;
+    background: url("../images/app/key.png") no-repeat center;
+    background-size: cover;
+}
+
+main section.page .page-body .content h2 {
+    font-size: 34px;
+    color: #004998;
+    margin: 0;
+    font-weight: normal;
+    padding: 15px;
+}
+
+main section.page:nth-of-type(1) .page-body .content figure,
+main section.page:nth-of-type(3) .page-body .content figure {
+
+}
+
+main section.page:nth-of-type(2) .page-body .content figure {
+
+}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+
+    main section {
+
+    }
+
+    main figure.banner .page-body .content,
+    main section.page .page-body .content {
+        position: relative;
+        top: 10vw;
+    }
+
+    main figure.banner .page-body .content figure,
+    main section.page .page-body .content figure {
+        width: 100px;
+        height: 100px;
+    }
+
+    main figure.banner .page-body .content h2,
+    main section.page .page-body .content h2 {
+        font-size: 44px;
+    }
+
+}
+
+@media (min-width: 1200px) {
+
+    main section {
+
+    }
+
+    main section.page {
+        background-position: center;
+    }
+
+    main figure.banner .page-body .content,
+    main section.page .page-body .content {
+        position: relative;
+        top: 300px;
+    }
+
+    main section.page:nth-of-type(2) .page-body .content {
+        top: 350px;
+    }
+
+    main section.page:nth-of-type(1) .page-body .content,
+    main section.page:nth-of-type(3) .page-body .content {
+        top: 150px;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    main section.page:nth-of-type(1) .page-body .content figure,
+    main section.page:nth-of-type(3) .page-body .content figure {
+        margin: 20px 15px;
+    }
+
+    main figure.banner {
+        background-position: center;
+    }
+}
+
+@media (min-width: 1400px) {
+
+
+}
