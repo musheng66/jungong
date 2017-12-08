@@ -131,3 +131,14 @@ button.btn {
 .clear {
     clear: both;
 }
+
+.blank-top {
+    height: 15px;
+}
+
+.blank-bottom {
+    height: 15px;
+    margin: 0 auto;
+    border-bottom: 1px solid #666;
+    max-width: 1200px;
+}

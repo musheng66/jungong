@@ -1,0 +1,177 @@
+/**
+    动态页面样式
+ */
+main {
+
+}
+
+main section {
+
+}
+
+main figure.banner {
+    width: 100%;
+    height: 50vw;
+    max-height: 500px;
+    background: url("../images/action/banner.png") no-repeat center;
+    background-size: auto 100%;
+}
+
+main section.page {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+main section.page figure {
+    background: no-repeat center;
+    background-size: cover;
+    height: 100vw;
+    max-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+main section.page hr {
+    margin: 10px 0;
+    width: 65px;
+    border-color: #fff;
+}
+
+main section.page h3 {
+    font-size: 32px;
+    font-weight: normal;
+}
+
+main section.page p {
+    font-size: 28px;
+    margin: 10px;
+    line-height: 36px;
+}
+
+main section.page .top {
+    background-image: url("../images/action/middle1.png");
+    order: 1;
+}
+
+main section.page .down-left {
+    background-image: url("../images/action/small1.png");
+    order: 2;
+}
+
+main section.page .down-right {
+    background-image: url("../images/action/small2.png");
+    order: 3;
+}
+
+main section.page .right {
+    background-image: url("../images/action/middle2.png");
+    order: 4;
+}
+
+main section.page .down-left:hover,
+main section.page .down-right:hover {
+    opacity: 0.8;
+    cursor: pointer;
+    -webkit-transition: all 0.25s ease;
+    -moz-transition: all 0.25s ease;
+    -ms-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+}
+
+main section.page .down-left .page-body .content .title,
+main section.page .down-right .page-body .content .title {
+    display: inline-block;
+    margin: 0 auto;
+}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+
+    main section {
+
+    }
+
+}
+
+@media (min-width: 1200px) {
+
+    main section {
+
+    }
+
+    main section.page {
+        max-width: 1200px;
+        margin: 0 auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 790px;
+    }
+
+    main section.page figure {
+        max-height: 760px;
+    }
+
+    main section.page .top {
+        margin: 15px 15px 15px 0;
+        width: 790px;
+        display: inline-block;
+        height: 350px;
+        order: 1;
+    }
+
+    main section.page .down-left {
+        width: 380px;
+        height: 380px;
+        display: inline-block;
+        margin: 15px 15px 15px 0;
+        position: relative;
+        top: -410px;
+        left: -205px;
+        background-position: -20px;
+        order: 3;
+    }
+
+    main section.page .down-right {
+        width: 380px;
+        height: 380px;
+        display: inline-block;
+        margin: 15px 0 15px 15px;
+        position: relative;
+        top: -410px;
+        left: -205px;
+        background-position: -20px;
+        order: 4;
+    }
+
+    main section.page .right {
+        width: 380px;
+        height: 760px;
+        margin: 15px 0 15px 15px;
+        display: inline-block;
+        background-image: url("../images/action/right.png");
+        order: 2;
+    }
+
+    main section.page .down-left .page-body .content,
+    main section.page .down-right .page-body .content {
+        padding: 20px 35px;
+        text-align: left;
+    }
+
+
+}
+
+@media (min-width: 1400px) {
+
+
+}
