@@ -30,6 +30,23 @@ main section.page {
     padding: 15px;
 }
 
+
+section.page:nth-of-type(1),
+section.page:nth-of-type(2) {
+    opacity: 0.9;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+section.page:nth-of-type(1):hover,
+section.page:nth-of-type(2):hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
 main section.page hr {
     margin: 10px auto 0;
     width: 80px;
