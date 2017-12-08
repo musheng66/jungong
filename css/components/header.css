@@ -79,6 +79,23 @@ header nav .container-fluid .navbar-header .navbar-brand figure {
         background-position: center;
     }
 
+    header nav.navbar {
+        min-height: 90px;
+    }
+
+    header nav .container-fluid .navbar-collapse ul.navbar-right {
+        height: 90px;
+        line-height: 90px;
+    }
+
+    header nav .container-fluid .navbar-collapse ul.navbar-right li a {
+        padding: 35px 15px;
+    }
+
+    header nav .container-fluid .navbar-header .navbar-brand {
+        height: 90px;
+    }
+
 }
 
 @media (min-width: 1000px) {
