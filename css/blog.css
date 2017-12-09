@@ -1,0 +1,175 @@
+/**
+    动态页面样式
+ */
+main {
+
+}
+
+main section {
+
+}
+
+main figure.banner {
+    width: 100%;
+    height: 50vw;
+    max-height: 500px;
+    background: url("../images/blog/banner.png") no-repeat center;
+    background-size: auto 100%;
+}
+
+main section.page {
+    width: 100%;
+    height: auto;
+}
+
+main section.page .page-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background: #fff;
+    padding: 15px;
+}
+
+main section.page hr {
+    margin: 10px 0;
+    width: 65px;
+    border-color: #fff;
+}
+
+main section.page h3 {
+    font-size: 32px;
+    font-weight: normal;
+}
+
+main section.page p {
+    font-size: 28px;
+    margin: 10px;
+    line-height: 36px;
+}
+
+main section.page .page-body .left {
+    color: #000;
+}
+
+main section.page .page-body .left .content {
+
+}
+
+main section.page .page-body .left .content .blog-list {
+
+}
+
+main section.page .page-body .left .content .blog-list .blog-single {
+    text-align: left;
+    padding-bottom: 15px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #000;
+}
+
+main section.page .page-body .left .content .blog-list .blog-single:nth-last-of-type(1) {
+    margin-bottom: 0;
+}
+
+main section.page .page-body .left .content .blog-list .blog-single h3 {
+    color: #337ab7;
+    display: inline-block;
+    border-bottom: 2px solid #337ab7;
+    margin: 0 0 15px 0;
+    padding: 0 0 15px 0;
+    line-height: 1.5;
+}
+
+main section.page .page-body .left .content .blog-list .blog-single .blog-info {
+    font-size: 14px;
+    margin: 10px 0;
+    line-height: 20px;
+}
+
+main section.page .page-body .left .content .blog-list .blog-single img {
+
+}
+
+main section.page .page-body .left .content .blog-list .blog-single .blog-simple {
+    font-size: 14px;
+    margin: 10px 0;
+    line-height: 20px;
+}
+
+main section.page .page-body .left .content .blog-list .blog-single .detail-button {
+    text-align: right;
+}
+
+main section.page .page-body .left .content .blog-list .blog-single button.btn-primary{
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+}
+
+main section.page .page-body .left .content .blog-list .blog-single button.btn-primary:hover {
+    color: #fff;
+    background-color: #286090;
+    border-color: #204d74;
+}
+
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+@media (min-width: 768px) {
+
+    main section {
+
+    }
+
+    main section.page .page-body {
+        flex-direction: row;
+    }
+
+    main section.page .page-body .left {
+        width: 70%;
+        padding-right: 15px;
+    }
+
+    main section.page .page-body .right {
+        width: 30%;
+    }
+
+    main section.page .page-body .right .content .links {
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+
+    main section.page .page-body .right .content .links .right-up,
+    main section.page .page-body .right .content .links .right-down {
+        width: 100%;
+    }
+
+}
+
+@media (min-width: 1200px) {
+
+    main section {
+
+    }
+
+    main section.page {
+        max-width: 1200px;
+        margin: 0 auto;
+        flex-direction: row;
+    }
+
+    main section.page .page-body {
+        padding: 40px;
+    }
+
+    main section.page .page-body .left {
+        padding-right: 40px;
+    }
+
+}
+
+@media (min-width: 1400px) {
+
+
+}

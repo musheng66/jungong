@@ -61,7 +61,7 @@
             <figure class="right">
 
             </figure>
-            <figure class="down-left">
+            <figure class="down-left" onclick="onClickItem(this);" data-url="blog.html">
                 <div class="page-body">
                     <div class="content">
                         <div class="title">
@@ -71,7 +71,7 @@
                     </div>
                 </div>
             </figure>
-            <figure class="down-right">
+            <figure class="down-right" onclick="onClickItem(this);" data-url="blog.html">
                 <div class="page-body">
                     <div class="content">
                         <div class="title">
@@ -138,6 +138,10 @@
 $(function(){
 
 });
+
+function onClickItem(obj) {
+    window.location.href = $(obj).data('url');
+}
 </script>
 </body>
 </html>

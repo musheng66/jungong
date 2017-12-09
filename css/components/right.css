@@ -1,0 +1,167 @@
+/**
+    设置blog页面右侧样式
+ */
+
+main section.page .right .content .links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+main section.page .right .content .links .right-up,
+main section.page .right .content .links .right-down {
+    opacity: 0.9;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background: no-repeat center;
+    background-size: cover;
+    height: 40vw;
+    max-height: 180px;
+    padding: 15px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+main section.page .right .content .links .right-up {
+    background-image: url("../../images/blog/link1.png");
+}
+
+main section.page .right .content .links .right-down {
+    background-image: url("../../images/blog/link2.png");
+}
+
+main section.page .right .content .links .right-up:hover,
+main section.page .right .content .links .right-down:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+main section.page .right .content .links .right-up hr,
+main section.page .right .content .links .right-down hr {
+    margin: 0;
+}
+
+main section.page .right .content .links .right-up h3,
+main section.page .right .content .links .right-down h3 {
+
+}
+
+main section.page .right .content .hot-spot {
+    color: #000;
+    border-top: 2px solid;
+    text-align: left;
+}
+
+main section.page .right .content .hot-spot h3 {
+
+}
+
+main section.page .right .content .hot-spot .hot-spot-list {
+
+}
+
+main section.page .right .content .hot-spot .hot-spot-list .hot-spot-single {
+    opacity: 0.9;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    padding: 15px 0;
+}
+
+main section.page .right .content .hot-spot .hot-spot-list .hot-spot-single:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+main section.page .right .content .hot-spot .hot-spot-list .hot-spot-single .media-left.media-middle {
+
+}
+
+main section.page .right .content .hot-spot .hot-spot-list .hot-spot-single .media-left.media-middle img {
+    width: 130px;
+    height: 130px;
+}
+
+main section.page .right .content .hot-spot .hot-spot-list .hot-spot-single .media-body {
+    vertical-align: middle;
+    width: 100%;
+}
+
+main section.page .right .content .hot-spot .hot-spot-list .hot-spot-single .media-body h4 {
+    margin: 0;
+    line-height: 24px;
+    color: #222;
+    max-height: 120px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+main section.page .right .content .hot-spot .hot-spot-list .hot-spot-single:hover .media-body h4 {
+    color: #000;
+}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+@media (min-width: 600px) {
+
+    main section {
+
+    }
+
+    main section.page .right .content .links {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    main section.page .right .content .links .right-up,
+    main section.page .right .content .links .right-down {
+        width: 50%;
+    }
+
+    main section.page .right .content .links .right-up {
+        margin-right: 15px;
+    }
+
+}
+
+
+@media (min-width: 768px) {
+
+    main section {
+
+    }
+
+    main section.page .page-body {
+        flex-direction: row;
+    }
+
+    main section.page .page-body .left {
+        width: 70%;
+    }
+
+    main section.page .page-body .right {
+        width: 30%;
+    }
+
+    main section.page .page-body .right .content .links {
+        flex-direction: column;
+    }
+
+    main section.page .page-body .right .content .links .right-up,
+    main section.page .page-body .right .content .links .right-down {
+        width: 100%;
+    }
+
+}
