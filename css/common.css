@@ -185,7 +185,7 @@ main figure.banner {
 @media (min-width: 1200px) {
 
     main figure.banner {
-        height: 26vw;
+        height: 28vw;
         min-height: 26vw;
         max-height: 100vh;
         width: 100vw;
