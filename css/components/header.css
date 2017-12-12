@@ -20,6 +20,10 @@ header nav.navbar {
     background-color: #000;
 }
 
+header nav.navbar.navbar-fixed-top {
+    opacity: 0.8;
+}
+
 header nav.navbar-inverse .navbar-nav>li {
     padding: 0 15px;
 }
@@ -30,7 +34,7 @@ header nav.navbar-inverse .navbar-nav>li>a {
 }
 
 header nav.navbar-inverse .navbar-nav>li>a:hover {
-    /*color: #9a9a9a;*/
+    color: #f6d96d;
 }
 
 header nav.navbar-inverse .navbar-nav>li>a:after {
@@ -38,7 +42,7 @@ header nav.navbar-inverse .navbar-nav>li>a:after {
     position: absolute;
     bottom: 0;
     height: 1px;
-    background-color: #eee;
+    background-color: #f6d96d;
     opacity: 0;
     width: 0;
     left: 0;

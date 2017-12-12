@@ -16,4 +16,12 @@ function onClickItem(obj) {
 
 (function($) {
 
+  $(window).scroll(function() {
+    if($(window).scrollTop() > 0){
+      $("nav.navbar").addClass("navbar-fixed-top");
+    } else {
+      $("nav.navbar").removeClass("navbar-fixed-top");
+    }
+  });
+
 })(jQuery);
