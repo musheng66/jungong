@@ -5,7 +5,7 @@
 
 /* Carousel base class */
 .carousel {
-    height: 55vw;
+    height: 100vw;
     max-height: 700px;
 }
 
@@ -32,15 +32,15 @@
 
 /* 轮播图 */
 .carousel .carousel-inner .item:nth-of-type(1) .container figure {
-    background: url("../../images/home/banner1.png") no-repeat center;
+    background: no-repeat center;
     background-size: auto 100%;
 }
 .carousel .carousel-inner .item:nth-of-type(2) .container figure {
-    background: url("../../images/home/banner1.png") no-repeat center;
+    background: no-repeat center;
     background-size: auto 100%;
 }
 .carousel .carousel-inner .item:nth-of-type(3) .container figure {
-    background: url("../../images/home/banner1.png") no-repeat center;
+    background: no-repeat center;
     background-size: auto 100%;
 }
 
@@ -57,12 +57,21 @@
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
+@media (min-width: 650px) {
+
+    .carousel {
+        height: calc(100vh - 55px);
+        max-height: 650px;
+        min-height: 38vw;
+    }
+}
 
 @media (min-width: 768px) {
 
     .carousel {
         height: calc(100vh - 90px);
         max-height: 700px;
+        min-height: 38vw;
     }
 
     .carousel .carousel-inner .item .container {
@@ -70,6 +79,15 @@
     }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
+
+    .carousel {
+        min-height: 38vw;
+        width: 100vw;
+    }
+
+    .carousel .carousel-inner .item .container figure {
+        background-size: 100% 100%;
+    }
 
 }

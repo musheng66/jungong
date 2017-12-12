@@ -53,18 +53,20 @@
 
     <main>
         <div id="myCarousel" data-ride="carousel" class="carousel slide">
-            <!-- Indicators-->
+            <!-- 用以显示轮播图下方圆点 -->
             <ol class="carousel-indicators">
                 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                 <li data-target="#myCarousel" data-slide-to="1"></li>
                 <li data-target="#myCarousel" data-slide-to="2"></li>
             </ol>
             <div role="listbox" class="carousel-inner">
+                <!-- 单个轮播图，背景为figure元素的background-image属性 -->
                 <div class="item active">
                     <div class="container">
                         <figure onclick="onClickItem(this);" data-url="products.html" style="background-image: url('images/home/banner1.png')"></figure>
                     </div>
                 </div>
+                <!-- 单个轮播图结束 -->
                 <div class="item">
                     <div class="container">
                         <figure onclick="onClickItem(this);" data-url="blog.html" style="background-image: url('images/home/banner1.png')"></figure>
@@ -76,6 +78,8 @@
                     </div>
                 </div>
             </div>
+            <!-- 轮播图两侧箭头，此处按要求屏蔽  -->
+            <!--
             <a href="#myCarousel" role="button" data-slide="prev" class="left carousel-control">
                 <span aria-hidden="true" class="glyphicon glyphicon-chevron-left"></span>
                 <span class="sr-only">上一页</span>
@@ -84,6 +88,7 @@
                 <span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>
                 <span class="sr-only">下一页</span>
             </a>
+            -->
         </div>
 
         <hr>
