@@ -10,14 +10,7 @@ main section {
 }
 
 main figure.banner {
-    width: 100%;
-    height: 100vw;
-    max-height: 500px;
-    background: url("../images/about/banner.png") no-repeat center;
-    background-size: auto 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+
 }
 
 main figure.banner .page-body {
@@ -80,18 +73,6 @@ main section.page h2 {
 
 main section.page p {
     font-size: 22px;
-}
-
-main section.page:nth-of-type(1) {
-    background-image: url("../images/about/section1.png");
-}
-
-main section.page:nth-of-type(2) {
-    background-image: url("../images/about/section2.png");
-}
-
-main section.page:nth-of-type(3) {
-    background-image: url("../images/about/section3.png");
 }
 
 main section.page .join {
