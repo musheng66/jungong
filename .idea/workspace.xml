@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a6b2b364-65f0-4e49-a6dc-96b3bb549376" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/investment.css" afterPath="$PROJECT_DIR$/css/investment.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/investment.html" afterPath="$PROJECT_DIR$/investment.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/joinus.css" afterPath="$PROJECT_DIR$/css/joinus.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/joinus.html" afterPath="$PROJECT_DIR$/joinus.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -93,22 +93,18 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="investment.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/investment.html">
+      <file leaf-file-name="joinus.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/joinus.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="63" column="97" lean-forward="true" selection-start-line="63" selection-start-column="97" selection-end-line="63" selection-end-column="97" />
-              <folding>
-                <element signature="n#style#0;n#figure#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="314">
+              <caret line="54" column="76" lean-forward="false" selection-start-line="54" selection-start-column="76" selection-end-line="54" selection-end-column="76" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="investment.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/investment.css">
+      <file leaf-file-name="joinus.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/css/joinus.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="180">
               <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
@@ -129,11 +125,9 @@
         <option value="$PROJECT_DIR$/css/carousel.css" />
         <option value="$PROJECT_DIR$/css/home.css" />
         <option value="$PROJECT_DIR$/css/products.css" />
-        <option value="$PROJECT_DIR$/css/joinus.css" />
         <option value="$PROJECT_DIR$/css/components/footer.css" />
         <option value="$PROJECT_DIR$/css/stores.css" />
         <option value="$PROJECT_DIR$/css/service.css" />
-        <option value="$PROJECT_DIR$/joinus.html" />
         <option value="$PROJECT_DIR$/products.html" />
         <option value="$PROJECT_DIR$/service.html" />
         <option value="$PROJECT_DIR$/stores.html" />
@@ -157,6 +151,8 @@
         <option value="$PROJECT_DIR$/css/common.css" />
         <option value="$PROJECT_DIR$/css/investment.css" />
         <option value="$PROJECT_DIR$/investment.html" />
+        <option value="$PROJECT_DIR$/joinus.html" />
+        <option value="$PROJECT_DIR$/css/joinus.css" />
       </list>
     </option>
   </component>
@@ -366,12 +362,12 @@
       <updated>1512373515855</updated>
       <workItem from="1512373517178" duration="34280000" />
       <workItem from="1512544994938" duration="39223000" />
-      <workItem from="1513044546704" duration="15232000" />
+      <workItem from="1513044546704" duration="15390000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="88735000" />
+    <option name="totallyTimeSpent" value="88893000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="801" extended-state="0" />
@@ -513,13 +509,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/joinus.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1515">
-          <caret line="101" column="22" lean-forward="false" selection-start-line="101" selection-start-column="22" selection-end-line="101" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/images/blog/large.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -545,14 +534,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="290">
           <caret line="173" column="0" lean-forward="false" selection-start-line="173" selection-start-column="0" selection-end-line="173" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/joinus.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="151" column="0" lean-forward="false" selection-start-line="151" selection-start-column="0" selection-end-line="151" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -754,6 +735,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/css/investment.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/investment.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="45" column="61" lean-forward="true" selection-start-line="45" selection-start-column="61" selection-end-line="45" selection-end-column="61" />
+          <folding>
+            <element signature="n#style#0;n#figure#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/about.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="290">
@@ -767,23 +768,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/investment.css">
+    <entry file="file://$PROJECT_DIR$/joinus.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        <state relative-caret-position="314">
+          <caret line="54" column="76" lean-forward="false" selection-start-line="54" selection-start-column="76" selection-end-line="54" selection-end-column="76" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/investment.html">
+    <entry file="file://$PROJECT_DIR$/css/joinus.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="63" column="97" lean-forward="true" selection-start-line="63" selection-start-column="97" selection-end-line="63" selection-end-column="97" />
-          <folding>
-            <element signature="n#style#0;n#figure#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="180">
+          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
