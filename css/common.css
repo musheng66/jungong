@@ -150,3 +150,45 @@ button.btn {
     border-bottom: 1px solid #666;
     max-width: 1200px;
 }
+
+/* section.page通用样式 */
+@media (min-width: 1200px) {
+
+    main section.page {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}
+
+/* banner通用样式 */
+main figure.banner {
+    width: 100%;
+    height: 100vw;
+    max-height: 500px;
+    background: no-repeat center;
+    background-size: auto 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media (min-width: 768px) {
+
+    main figure.banner {
+        height: calc(100vh - 90px);
+        max-height: 700px;
+        min-height: 38vw;
+    }
+
+}
+
+@media (min-width: 1200px) {
+
+    main figure.banner {
+        min-height: 38vw;
+        max-height: 100vh;
+        width: 100vw;
+        background-size: 100% 100%;
+    }
+
+}
