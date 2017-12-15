@@ -12,6 +12,7 @@
     <script src="./js/oldIE/respond.min.js"></script>
     <![endif]-->
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrapValidator.min.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
 
     <link rel="stylesheet" href="css/common.css">
@@ -60,50 +61,69 @@
         <section class="page" style="background-image: url('./images/products/section3.png');">
         </section>
         <section class="page joinus">
-            <form class="form-horizontal">
+            <form class="form-horizontal" id="productsForm">
                 <div class="form-group">
                     <label for="name" class="col-xs-12 col-sm-3 control-label">收货人</label>
                     <div class="col-xs-12 col-sm-9 col-md-6">
-                        <input type="text" class="form-control" id="name" placeholder="请输入收货人姓名">
+                        <input type="text" class="form-control" name="name" id="name" placeholder="请输入收货人姓名" required data-bv-notempty-message="请输入收货人姓名"
+                               pattern="^[a-zA-Z0-9'·\u4e00-\u9fa5]+$" data-bv-regexp-message="请输入中文，英文，数字，·"
+                               data-bv-stringlength="true" data-bv-stringlength-min="1" data-bv-stringlength-max="30" data-bv-stringlength-message="请输入30个字以内的内容">
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="number" class="col-xs-12 col-sm-3 control-label">订购数量</label>
                     <div class="col-xs-12 col-sm-9 col-md-6">
-                        <input type="text" class="form-control" id="number" placeholder="" value="1">
+                        <input type="number" class="form-control" name="number" id="number" placeholder="" value="1" required data-bv-notempty-message="请输入订购数量" >
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="col-xs-12 col-sm-3 control-label">订购人省市</label>
+                    <label class="col-xs-12 col-sm-3 control-label">省份城市</label>
                     <div class="col-xs-6 col-sm-4 col-md-3">
-                        <select class="form-control" id="province">
-                            <option>请选择</option>
-                            <option>北京市</option>
+                        <select class="form-control" name="province" id="province" required
+                                data-bv-notempty data-bv-notempty-message="请选择省份" onchange="getCity();">
+                            <option value="">请选择省份</option>
                         </select>
                     </div>
                     <div class="col-xs-6 col-sm-4 col-md-3">
-                        <select class="form-control" id="city">
-                            <option>请选择</option>
-                            <option>海淀区</option>
+                        <select class="form-control" name="city" id="city" required
+                                data-bv-notempty data-bv-notempty-message="请选择城市">
+                            <option value="">请选择城市</option>
                         </select>
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="address" class="col-xs-12 col-sm-3 control-label">收货人地址</label>
                     <div class="col-xs-12 col-sm-9 col-md-6">
-                        <input type="text" class="form-control" id="address" placeholder="请输入收货人地址" value="">
+                        <input type="text" class="form-control" name="address" id="address" placeholder="请输入收货人地址" required data-bv-notempty-message="请输入收货人地址"
+                               pattern="^[a-zA-Z0-9'·\u4e00-\u9fa5]+$" data-bv-regexp-message="请输入中文，英文，数字，·"
+                               data-bv-stringlength="true" data-bv-stringlength-min="1" data-bv-stringlength-max="50" data-bv-stringlength-message="请输入50个字以内的内容">
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="phone" class="col-xs-12 col-sm-3 control-label">手机号码</label>
                     <div class="col-xs-12 col-sm-9 col-md-6">
-                        <input type="tel" class="form-control" id="phone" placeholder="" value="">
+                        <input type="tel" class="form-control" name="phone" id="phone" placeholder="请输入手机号" required data-bv-notempty-message="请输入手机号"
+                               pattern="^(((13[0-9]{1})|(15[0-9]{1})|(88[0-9]{1})|(83[0-9]{1})|(85[0-9]{1})|(14[0-9]{1})|(18[0-9]{1}))+\d{8})$" data-bv-regexp-message="请输入正确的手机号码"
+                               data-bv-stringlength="true" data-bv-stringlength-min="1" data-bv-stringlength-max="30" data-bv-stringlength-message="请输入30个字以内的内容">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="phone" class="col-xs-12 col-sm-3 control-label">验证码</label>
+                    <div class="col-xs-12 col-sm-9 col-md-6">
+                        <div class="input-group">
+                            <input type="tel" class="form-control" name="validCode" id="validCode" placeholder="请获取验证码" required data-bv-notempty-message="请输入验证码"
+                                   pattern="^[0-9]" data-bv-regexp-message="请输入数字验证码"
+                                   data-bv-stringlength="true" data-bv-stringlength-min="1" data-bv-stringlength-max="30" data-bv-stringlength-message="请输入30个字以内的内容">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" type="button" id="getcode" style="min-width: 150px;">获取验证码</button>
+                            </span>
+                        </div>
                     </div>
                 </div>
                 <div class="form-group">
                     <label class="col-xs-12 col-sm-3 control-label">支付方式</label>
                     <div class="col-xs-12 col-sm-3">
-                        <select class="form-control" id="pay">
+                        <select class="form-control" name="pay" id="pay" required data-bv-notempty data-bv-notempty-message="请选择支付方式">
                             <option>货到付款</option>
                         </select>
                     </div>
@@ -111,7 +131,9 @@
                 <div class="form-group">
                     <label for="message" class="col-xs-12 col-sm-3 control-label">备注</label>
                     <div class="col-xs-12 col-sm-9 col-md-6">
-                        <textarea class="form-control" rows="5" id="message"></textarea>
+                        <textarea class="form-control" rows="5" name="message" id="message" placeholder="请输入300个字以内的内容"
+                                  data-bv-stringlength="true" data-bv-stringlength-min="0" data-bv-stringlength-max="300"
+                                  data-bv-stringlength-message="请输入300个字以内的内容"></textarea>
                     </div>
                 </div>
                 <div class="form-group btn-submit-area">
@@ -171,12 +193,227 @@
 <!-- Bootstrap core JavaScript -->
 <script type="text/javascript" src="./js/jquery.min.js"></script>
 <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+<script type="text/javascript" src="./js/bootstrapValidator.js"></script>
 <script type="text/javascript" src="./js/common.js"></script>
 <!-- Custom javascripts for this template -->
 <script type="text/javascript">
-$(function(){
+  $(function(){
 
-});
+    getProvince();
+
+    //初始化表单验证
+    $('#productsForm').bootstrapValidator().on('success.form.bv', function(e) {
+      // Prevent form submission
+      e.preventDefault();
+
+      // Get the form instance
+      var $form = $(e.target);
+
+      // Get the BootstrapValidator instance
+      var bv = $form.data('bootstrapValidator');
+
+      //提交表单
+      submitForm();
+
+      bv.resetForm();
+    });
+
+    //短信验证码
+    var InterValObj; //timer变量，控制时间
+    var count = 60; //间隔函数，1秒执行
+    var curCount;//当前剩余秒数
+
+    $("#getcode").click(function () {
+
+      if($('#phone').val() == '' || $('#phone').parents('.form-group').hasClass('has-error')) { return; }
+
+      //获取输入的手机号码
+      var phoNum = $("#phone").val();
+      curCount = count;
+
+      // 设置按钮显示效果，倒计时
+      $("#getcode").attr("disabled", "true");
+      $("#getcode").html("请在" + curCount + "秒后再次获取");
+      InterValObj = window.setInterval(SetRemainTime, 1000); // 启动计时器，1秒执行一次
+
+      var json = {};
+      json.phone = phoNum;
+
+      // 向后台发送处理数据
+      $.ajax({
+        type: "POST",
+        url: "",
+        dataType:"JSON",
+        data: json,
+        success: function (data) {
+          //前台给出提示语
+          if (data == "true") {
+            alert("√ 短信验证码已发到您的手机,请查收(30分钟内有效)");
+          } else if (data == "false") {
+            alert("× 短信验证码发送失败，请重新发送");
+            return false;
+          }
+        },
+        error: function (msg) {
+          alert('获取验证码失败');
+        }
+      });
+
+    });
+
+    // timer处理函数
+    function SetRemainTime() {
+      if (curCount == 0) {
+        window.clearInterval(InterValObj);// 停止计时器
+        $("#getcode").removeAttr("disabled");// 启用按钮
+        $("#getcode").html("重新发送验证码");
+        code = ""; // 清除验证码。如果不清除，过时间后，输入收到的验证码依然有效
+      } else {
+        curCount--;
+        $("#getcode").html("请在" + curCount + "秒后再次获取");
+      }
+    }
+
+    // 提交方法
+    function submitForm() {
+
+      var name = $('#name').val();
+      var number = $('#number').val();
+      var province = $('#province').val();
+      var city = $('#city').val();
+      var address = $('#address').val();
+      var phone = $('#phone').val();
+      var validCode = $('#validCode').val();
+      var pay = $('#pay').val();
+      var message = $('#message').val();
+
+      var json = {};
+
+      json.name = name;
+      json.number = number;
+      json.province = province;
+      json.city = city;
+      json.address = address;
+      json.phpne = phone;
+      json.validCode = validCode;
+      json.pay = pay;
+      json.message = message;
+
+      $.ajax({
+        type: "POST",
+        url: "",
+        dataType:"JSON",
+        data: json,
+        success:function(data){
+          if (data.success == true) {
+            alert(data.message);
+          } else {
+            alert(data.message);
+          }
+        },
+        error:function(data){
+
+        },
+        complete:function(data){
+
+        }
+      });
+    }
+
+  });
+
+
+  // 省份／城市
+  function getProvince() {
+
+    var json = {};
+
+    $.ajax({
+      type: "POST",
+      url: "",
+      dataType:"JSON",
+      data: json,
+      success:function(data){
+        if (data.success == true) {
+          $.each(data.cities, function (key, value) {
+            $('<option value="' + value.id + '">' + value.name + '</option>').appendTo($("#province"));
+          })
+        } else {
+          console.log(data.message);
+        }
+      },
+      error:function(data){
+        // 模拟的返回数据data的结构
+        data = {
+          success : true,
+          message: '获取成功',
+          cities: [
+            { id: 1, name: '北京市' },
+            { id: 2, name: '河北省' },
+            { id: 3, name: '山西省' },
+          ]
+        };
+        $.each(data.cities, function (key, value) {
+          $('<option value="' + value.id + '">' + value.name + '</option>').appendTo($("#province"));
+        })
+      },
+      complete:function(data){
+
+      }
+    });
+  }
+
+  function getCity() {
+
+    var json = {};
+
+    json.province = $('#province').val();
+
+    if (json.province == '') {
+      $('#city').val('');
+      return;
+    }
+
+    $.ajax({
+      type: "POST",
+      url: "",
+      dataType:"JSON",
+      data: json,
+      success:function(data){
+        if (data.success == true) {
+          $("#city").html('');
+          $('<option value="">请选择城市</option>').appendTo($("#city"));
+          $.each(data.cities, function (key, value) {
+            $('<option value="' + value.id + '">' + value.name + '</option>').appendTo($("#city"));
+          })
+        } else {
+          console.log(data.message);
+        }
+      },
+      error:function(data){
+        // 模拟的返回数据data的结构
+        data = {
+          success : true,
+          message: '获取成功',
+          cities: [
+            { id: 1, name: '通州区' },
+            { id: 2, name: '海淀区' },
+            { id: 3, name: '朝阳区' },
+          ]
+        };
+        $("#city").html('');
+        $('<option value="">请选择城市</option>').appendTo($("#city"));
+        $.each(data.cities, function (key, value) {
+          $('<option value="' + value.id + '">' + value.name + '</option>').appendTo($("#city"));
+        })
+      },
+      complete:function(data){
+        $('#productsForm').bootstrapValidator('revalidateField', 'province');
+        $('#productsForm').bootstrapValidator('revalidateField', 'city');
+      }
+    });
+  }
+
 </script>
 </body>
 </html>
