@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a6b2b364-65f0-4e49-a6dc-96b3bb549376" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/investment.html" afterPath="$PROJECT_DIR$/investment.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/products.html" afterPath="$PROJECT_DIR$/products.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stores.html" afterPath="$PROJECT_DIR$/stores.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -26,8 +24,8 @@
       <file leaf-file-name="investment.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/investment.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="305">
-              <caret line="133" column="78" lean-forward="false" selection-start-line="131" selection-start-column="91" selection-end-line="133" selection-end-column="78" />
+            <state relative-caret-position="155">
+              <caret line="319" column="0" lean-forward="true" selection-start-line="319" selection-start-column="0" selection-end-line="409" selection-end-column="1" />
               <folding>
                 <element signature="n#style#0;n#button#0;n#span#0;n#div#0;n#div#0;n#div#2;n#form#0;n#section#2;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -35,13 +33,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="products.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/products.html">
+      <file leaf-file-name="stores.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/stores.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2785">
-              <caret line="104" column="74" lean-forward="false" selection-start-line="104" selection-start-column="74" selection-end-line="104" selection-end-column="74" />
+            <state relative-caret-position="260">
+              <caret line="67" column="22" lean-forward="true" selection-start-line="58" selection-start-column="16" selection-end-line="67" selection-end-column="22" />
               <folding>
-                <element signature="n#style#0;n#button#0;n#span#0;n#div#0;n#div#0;n#div#5;n#form#0;n#section#3;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#select#0;n#div#0;n#div#0;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#select#1;n#div#0;n#div#0;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -80,13 +79,13 @@
         <option value="$PROJECT_DIR$/css/products.css" />
         <option value="$PROJECT_DIR$/service.html" />
         <option value="$PROJECT_DIR$/css/service.css" />
-        <option value="$PROJECT_DIR$/stores.html" />
         <option value="$PROJECT_DIR$/css/stores.css" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/css/common.css" />
         <option value="$PROJECT_DIR$/js/common.js" />
         <option value="$PROJECT_DIR$/investment.html" />
         <option value="$PROJECT_DIR$/products.html" />
+        <option value="$PROJECT_DIR$/stores.html" />
       </list>
     </option>
   </component>
@@ -293,12 +292,12 @@
       <workItem from="1512373517178" duration="34280000" />
       <workItem from="1512544994938" duration="39223000" />
       <workItem from="1513044546704" duration="19892000" />
-      <workItem from="1513304158117" duration="9594000" />
+      <workItem from="1513304158117" duration="11324000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="102989000" />
+    <option name="totallyTimeSpent" value="104719000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="801" extended-state="6" />
@@ -556,13 +555,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="14" lean-forward="true" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stores.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="55" column="42" lean-forward="false" selection-start-line="55" selection-start-column="42" selection-end-line="55" selection-end-column="42" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -677,22 +670,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/products.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="144" column="18" lean-forward="true" selection-start-line="144" selection-start-column="18" selection-end-line="144" selection-end-column="18" />
+          <folding>
+            <element signature="n#style#0;n#button#0;n#span#0;n#div#0;n#div#0;n#div#5;n#form#0;n#section#3;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/investment.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="133" column="78" lean-forward="false" selection-start-line="131" selection-start-column="91" selection-end-line="133" selection-end-column="78" />
+        <state relative-caret-position="155">
+          <caret line="319" column="0" lean-forward="true" selection-start-line="319" selection-start-column="0" selection-end-line="409" selection-end-column="1" />
           <folding>
             <element signature="n#style#0;n#button#0;n#span#0;n#div#0;n#div#0;n#div#2;n#form#0;n#section#2;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/products.html">
+    <entry file="file://$PROJECT_DIR$/stores.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2785">
-          <caret line="104" column="74" lean-forward="false" selection-start-line="104" selection-start-column="74" selection-end-line="104" selection-end-column="74" />
+        <state relative-caret-position="260">
+          <caret line="67" column="22" lean-forward="true" selection-start-line="58" selection-start-column="16" selection-end-line="67" selection-end-column="22" />
           <folding>
-            <element signature="n#style#0;n#button#0;n#span#0;n#div#0;n#div#0;n#div#5;n#form#0;n#section#3;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#select#0;n#div#0;n#div#0;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#select#1;n#div#0;n#div#0;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -56,12 +56,18 @@
         <section class="page flex-content">
             <div class="title">
                 <h3>君工零售店</h3>
-                <select class="form-control" id="area">
-                    <option>请选择地区</option>
-                    <option>北京</option>
-                </select>
+                <div class="">
+                    <select class="form-control" name="province" id="province" style="width: 110px;display: inline-block;margin: 0 5px;"
+                            data-bv-notempty data-bv-notempty-message="请选择省份" onchange="getCity();">
+                        <option value="">请选择省份</option>
+                    </select>
+                    <select class="form-control" name="city" id="city"
+                            data-bv-notempty data-bv-notempty-message="请选择城市" onchange="getStores();" style="width: 110px;display: inline-block;margin: 0 5px;">
+                        <option value="">请选择城市</option>
+                    </select>
+                </div>
             </div>
-            <div class="content">
+            <div class="content" id="storesArea">
                 <div class="store-single">
                     <div class="area-title">
                         <h4>王府井百货</h4>
@@ -151,7 +157,165 @@
 <script type="text/javascript">
 $(function(){
 
+  getProvince();
+
 });
+
+// 获取门店信息
+function getStores() {
+
+  var json = {};
+
+  json.city = $('#city').val();
+
+  if (json.city == '') {
+    return;
+  }
+
+  $.ajax({
+    type: "POST",
+    url: "",
+    dataType:"JSON",
+    data: json,
+    success:function(data){
+      if (data.success == true) {
+        $("#storesArea").html('');
+        var html = '';
+        $.each(data.stores, function (key, value) {
+          html += '<div class="store-single">' +
+              '<div class="area-title">' +
+              '<h4>' + value.name + '</h4>' +
+              '</div>' +
+              '<div class="context">' +
+              '<p>' + value.address + '</p>' +
+              '</div>' +
+              '</div>';
+        });
+        $(html).appendTo($("#storesArea"));
+      } else {
+        console.log(data.message);
+      }
+    },
+    error:function(data){
+      // 模拟的返回数据data的结构
+      data = {
+        success : true,
+        message: '获取成功',
+        stores: [
+          { id: 1, name: '通州区1号店', address: '北京市东城区王府井大街王府井百货北馆5层8848专柜' },
+          { id: 2, name: '海淀区2号店', address: '北京市东城区王府井大街王府井百货北馆5层8848专柜2' },
+          { id: 3, name: '朝阳区3号店', address: '北京市东城区王府井大街王府井百货北馆5层8848专柜3' },
+        ]
+      };
+      $("#storesArea").html('');
+      var html = '';
+      $.each(data.stores, function (key, value) {
+        html += '<div class="store-single">' +
+                    '<div class="area-title">' +
+                        '<h4>' + value.name + '</h4>' +
+                    '</div>' +
+                    '<div class="context">' +
+                        '<p>' + value.address + '</p>' +
+                    '</div>' +
+                '</div>';
+      });
+      $(html).appendTo($("#storesArea"));
+    },
+    complete:function(data){
+
+    }
+  });
+}
+
+// 省份／城市
+function getProvince() {
+
+  var json = {};
+
+  $.ajax({
+    type: "POST",
+    url: "",
+    dataType:"JSON",
+    data: json,
+    success:function(data){
+      if (data.success == true) {
+        $.each(data.cities, function (key, value) {
+          $('<option value="' + value.id + '">' + value.name + '</option>').appendTo($("#province"));
+        })
+      } else {
+        console.log(data.message);
+      }
+    },
+    error:function(data){
+      // 模拟的返回数据data的结构
+      data = {
+        success : true,
+        message: '获取成功',
+        cities: [
+          { id: 1, name: '北京市' },
+          { id: 2, name: '河北省' },
+          { id: 3, name: '山西省' },
+        ]
+      };
+      $.each(data.cities, function (key, value) {
+        $('<option value="' + value.id + '">' + value.name + '</option>').appendTo($("#province"));
+      })
+    },
+    complete:function(data){
+
+    }
+  });
+}
+
+function getCity() {
+
+  var json = {};
+
+  json.province = $('#province').val();
+
+  if (json.province == '') {
+    $('#city').val('');
+    return;
+  }
+
+  $.ajax({
+    type: "POST",
+    url: "",
+    dataType:"JSON",
+    data: json,
+    success:function(data){
+      if (data.success == true) {
+        $("#city").html('');
+        $('<option value="">请选择城市</option>').appendTo($("#city"));
+        $.each(data.cities, function (key, value) {
+          $('<option value="' + value.id + '">' + value.name + '</option>').appendTo($("#city"));
+        })
+      } else {
+        console.log(data.message);
+      }
+    },
+    error:function(data){
+      // 模拟的返回数据data的结构
+      data = {
+        success : true,
+        message: '获取成功',
+        cities: [
+          { id: 1, name: '通州区' },
+          { id: 2, name: '海淀区' },
+          { id: 3, name: '朝阳区' },
+        ]
+      };
+      $("#city").html('');
+      $('<option value="">请选择城市</option>').appendTo($("#city"));
+      $.each(data.cities, function (key, value) {
+        $('<option value="' + value.id + '">' + value.name + '</option>').appendTo($("#city"));
+      })
+    },
+    complete:function(data){
+
+    }
+  });
+}
 </script>
 </body>
 </html>
