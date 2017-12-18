@@ -148,3 +148,15 @@ header nav .container-fluid .navbar-header .navbar-brand figure {
 
 
 }
+
+
+/* fix设置header会引起页面上部被覆盖，因此以header的高度作为main的padding-top */
+main {
+    padding-top: 55px;
+}
+
+@media (min-width: 768px) {
+    main {
+        padding-top: 90px;
+    }
+}
