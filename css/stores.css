@@ -67,7 +67,7 @@ main section.page.flex-content .content .store-single .area-title {
 }
 
 main section.page.flex-content .content .store-single .area-title h4 {
-    font-size: 28px;
+    font-size: 24px;
     font-weight: normal;
     display: inline-block;
     border-bottom: 1px solid #999;
@@ -79,7 +79,7 @@ main section.page.flex-content .content .store-single .context {
 }
 
 main section.page.flex-content .content .store-single .context p {
-    font-size: 22px;
+    font-size: 16px;
     line-height: 24px;
 }
 

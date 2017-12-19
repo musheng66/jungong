@@ -121,6 +121,7 @@ header nav .container-fluid .navbar-header .navbar-brand figure {
 
     header nav .container-fluid .navbar-header .navbar-brand {
         height: 90px;
+        width: 160px;
     }
 
     header nav.navbar-inverse .navbar-nav>li {

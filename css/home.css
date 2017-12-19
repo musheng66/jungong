@@ -69,6 +69,7 @@ div.main-card .row .card-entity:nth-of-type(3) figure {
     div.main-card .row .card-entity {
         height: 20vw;
         padding: 0;
+        max-height: 240px;
     }
 }
 
